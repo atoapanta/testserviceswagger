@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 });
 
 // Ruta para servir archivos estáticos desde la carpeta public
-// app.use(express.static(path.join(process.cwd(), "public")));
+app.use(express.static(path.join(process.cwd(), "public")));
 
 // Iniciar el servidor
 app.listen(PORT, () => {
